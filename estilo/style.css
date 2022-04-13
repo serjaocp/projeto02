@@ -16,6 +16,7 @@
 html, body{
     min-height: 100vh;
     background-color: val(--cor0);
+    font-family: var(--fonte-padrao);
 }
 header{
     background-color: var(--cor1);
@@ -28,8 +29,7 @@ header >h1{
     padding-top: 50px;
     font-variant: small-caps;
 }
-header >p{
-    font-family: var(--fonte-padrao);    
+header >p{       
     padding-bottom: 50px;
 }
 a{
@@ -48,38 +48,32 @@ section{
     line-height: 2em;
     font-size: 3.5vw;
 }
-.normal >p{    
-    background-color: var(--cor0);
-    color: var(--cor1); 
-    padding-bottom: 2em;       
+.normal >p{     
+    padding-bottom: 2em; 
+    text-shadow: 1px 1px 0px rgba(163, 161, 161, 0.788);      
 }
 .imagem{
     background-color: var(--cor1);  
-    color: var(--cor0);     
-      
+    color: var(--cor0); 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;      
 }
 .imagem >p{    
     background-color: rgba(0, 0, 0, 0.514);
-    width: 600px;     
+    display: inline-block;  
+    padding: 5px; 
+    text-shadow: 2px 1px 0px black;
 }
 section#img1{
     background-image: url(/imagens/background001.jpg);
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-position: right center;        
 }section#img2{
-    background-image: url(/imagens/background002.jpg);
-    background-position: left center;
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-image: url(/imagens/background002.jpg);          
 }
-
 footer{
 background-color: var(--cor1);
 color: var(--cor0);
-font-family: var(--fonte-padrao);
 text-align: center;
 padding: 10px;
 }
