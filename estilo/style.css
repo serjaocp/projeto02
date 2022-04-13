@@ -13,39 +13,40 @@
     margin: 0px;  
     font-size: 1em;  
 }
+html, body{
+    min-height: 100vh;
+    background-color: val(--cor0);
+}
 header{
     background-color: var(--cor1);
+    color: var(--cor0);
     text-align: center;
 }
 header >h1{
     font-family: var(--fonte-destaque);
     font-size: 10vw;
-    color: var(--cor0);
     padding-top: 50px;
+    font-variant: small-caps;
 }
-header >p{font-family: var(--fonte-padrao);
-    color: var(--cor0);
+header >p{
+    font-family: var(--fonte-padrao);    
     padding-bottom: 50px;
 }
-header >p>strong>a{
+a{
     color: var(--cor0);
-    text-decoration: none   ;
+    text-decoration: none;
+    font-weight: bolder;
 }
-header >p>strong>a:hover{
-    color: var(--cor0);
+a:hover{    
     text-decoration: underline ;
 }
-main{
-    font-family: var(--fonte-pricipal);
-}
 section{
+    font-family: var(--fonte-pricipal);    
     padding-top: 10vh;
     padding-bottom: 10vh;
+    padding-left: 30px; 
     line-height: 2em;
     font-size: 3.5vw;
-}
-.normal {     
-    padding-left: 30px;    
 }
 .normal >p{    
     background-color: var(--cor0);
@@ -53,42 +54,33 @@ section{
     padding-bottom: 2em;       
 }
 .imagem{
-    background-color: var(--cor1);       
-    padding-left: 30px;     
+    background-color: var(--cor1);  
+    color: var(--cor0);     
+      
+}
+.imagem >p{    
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 600px;     
 }
 section#img1{
-    background-image: url(imagens/background001.jpg);
+    background-image: url(/imagens/background001.jpg);
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }section#img2{
-    background-image: url(imagens/background002.jpg);
+    background-image: url(/imagens/background002.jpg);
     background-position: left center;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
-.imagem >p{
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.514);
-    color: var(--cor0);
-    padding: 5px;        
-}
+
 footer{
 background-color: var(--cor1);
+color: var(--cor0);
+font-family: var(--fonte-padrao);
 text-align: center;
 padding: 10px;
 }
-footer>p{  
-    color: var(--cor0);  
-    font-family: var(--fonte-padrao);    
-}
-footer p>strong>a{
-    color: var(--cor0);
-    text-decoration: none ;
-}
-footer p>strong>a:hover{
-    color: var(--cor0);
-    text-decoration: underline ;
-}
+
